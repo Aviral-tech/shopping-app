@@ -1,0 +1,30 @@
+{
+  "name": "shopping-app",
+  "version": "1.0.0",
+  "description": "MERN shpping app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aviral-tech/shopping-app.git"
+  },
+  "author": "aviral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aviral-tech/shopping-app/issues"
+  },
+  "homepage": "https://github.com/Aviral-tech/shopping-app#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
